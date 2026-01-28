@@ -34,3 +34,42 @@ body {
   border: 1px solid #334155;
   color: white;
 }
+
+/* =============================
+   RESPONSIVE FIXES (ADDED)
+============================= */
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+@media (max-width: 768px) {
+  .card {
+    padding: 1.25rem;
+    border-radius: 1rem;
+  }
+
+  .bg-grid-pattern {
+    background-size: 24px 24px;
+    mask-image: linear-gradient(to bottom, black 25%, transparent 100%);
+  }
+
+  .input {
+    padding: 0.65rem 0.9rem;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    padding: 1rem;
+  }
+}
+
+@media (hover: none) {
+  .card:hover {
+    transform: none;
+    box-shadow: none;
+  }
+}
